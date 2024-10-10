@@ -38,7 +38,7 @@ function Home() {
     }
 
   return (
-    <>
+    <div className='HomeMain'>
     <div>
       <Toaster position="top-right" toastOptions={
         {
@@ -56,13 +56,14 @@ function Home() {
         }
       } ></Toaster>
     </div>
+
     <div className="container">
         <h1 className="name">CodeStream</h1>
         <form id="connectForm">
-            <label for="roomId">Room ID:</label>
+            <label htmlFor="roomId">Room ID:</label>
             <input type="text" onChange={(e)=> setRoomId(e.target.value)} id="roomId" name="roomId" value={roomId}  placeholder="Enter Room ID" onKeyUp={handleInputEnter} />
 
-            <label for="userName">User Name:</label>
+            <label htmlFor="userName">User Name:</label>
             <input type="text" onChange={(e)=> setUserName(e.target.value)} id="userName" name="userName" value={userName}  placeholder="Enter Your Name" onKeyUp={handleInputEnter}/>
 
             <button  onClick={joinRoom} >Connect</button>
@@ -71,7 +72,7 @@ function Home() {
         </form>
         <div id="result"></div>
     </div>
-    </>
+    </div>
   )
 }
 
