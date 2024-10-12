@@ -72,8 +72,8 @@ h3 {
 .editorSide {
     width: 80%;
     padding: 20px;
-    background-color: #a8ffa8;
-    display: flex;
+    background-color: #282a36;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
